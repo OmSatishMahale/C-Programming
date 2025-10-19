@@ -1,1 +1,314 @@
 --------------------------------Program 18--------------------------------
+#include<stdio.h>
+void Display(int iFrequency)                       
+{
+    int iCnt=0;
+
+    //Filter
+    if(iFrequency < 0)
+    {
+        printf("Invalid Input\n");
+        return;
+    }
+    for(iCnt=1;iCnt<=iFrequency;iCnt++)
+    {
+    printf("Jay Ganesh...\n");
+    }
+}
+
+int main()
+{  
+    int iCount=0;
+    printf("Enter the frequency : \n");
+    scanf("%d",&iCount);
+
+    Display(iCount);
+    
+    return 0;
+}
+
+
+
+--------------------------------Program 19--------------------------------
+#include<stdio.h>
+
+void Display()
+{
+    printf("1\n");
+    printf("2\n");
+    printf("3\n");
+    printf("4\n");
+    printf("5\n");
+    printf("6\n");
+}
+
+int main()
+{
+    
+    Display();
+
+    return 0;
+}
+
+
+
+
+--------------------------------Program 20--------------------------------
+#include<stdio.h>
+
+void Display()
+{
+    int iCnt=0;
+    for(iCnt = 1;iCnt<=5;iCnt++)
+    {
+        printf("%d\n",iCnt);
+    }
+}
+
+int main()
+{
+    
+    Display();
+
+    return 0;
+}
+
+
+
+
+--------------------------------Program 21--------------------------------
+#include<stdio.h>
+
+void Display()
+{
+    int iCnt=0;
+
+    
+    while(iCnt<5)
+    {
+        iCnt ++;
+        printf("%d\n",iCnt);
+    }
+}
+
+int main()
+{
+    
+    Display();
+
+    return 0;
+}
+
+
+
+--------------------------------Program 22--------------------------------
+#include<stdio.h>
+
+void Display()
+{
+    int iCnt=0;
+    for(iCnt = 1;iCnt<=5;iCnt++)
+    {
+        printf(" * \t",iCnt);
+    }
+}
+
+int main()
+{
+    
+    Display();
+
+    return 0;
+}
+
+
+
+--------------------------------Program 23--------------------------------
+#include<stdio.h>
+
+void Display()
+{
+    printf("1 \t * \t ");
+    printf("2 \t * \t ");
+    printf("3 \t * \t ");
+    printf("4 \t * \t ");
+    printf("5 \t * \t ");
+}
+
+int main()
+{
+    
+    Display();
+
+    return 0;
+}
+
+
+--------------------------------Program 24--------------------------------
+#include<stdio.h>
+
+void Display()
+{
+    int iCnt=0;
+    for(iCnt = 1;iCnt<=5;iCnt++)
+    {
+        printf("%d\t",iCnt);
+        printf(" * \t",iCnt);
+    }
+}
+
+int main()
+{
+    
+    Display();
+
+    return 0;
+}
+
+
+--------------------------------Program 25--------------------------------
+//5 4 3 2 1
+
+#include<stdio.h>
+
+void Display()
+{
+    printf("5\t");
+    printf("4\t");
+    printf("3\t");
+    printf("2\t");
+    printf("1\t");
+}
+
+int main()
+{
+    
+    Display();
+
+    return 0;
+}
+
+
+--------------------------------Program 26--------------------------------
+//5 4 3 2 1
+
+#include<stdio.h>
+
+void Display()
+{
+    int iCnt =0;
+
+    for(iCnt = 5;iCnt>=1;iCnt--)
+    {
+        printf("%d\t",iCnt);
+    }
+}
+
+int main()
+{
+    
+    Display();
+
+    return 0;
+}
+
+
+--------------------------------Program 27--------------------------------
+#include<stdio.h>
+
+void Display(int iNo)
+{
+    int iCnt=0;
+    for(iCnt = 1;iCnt<=iNo;iCnt++)
+    {
+        printf("%d\n",iCnt);
+    }
+}
+
+int main()
+{
+    
+    Display(7);
+
+    return 0;
+}
+
+
+--------------------------------Program 28--------------------------------
+#include<stdio.h>
+
+void Display(int iNo)
+{
+    int iCnt=0;
+    for(iCnt = 1;iCnt<=iNo;iCnt++)
+    {
+        printf("%d\n",iCnt);
+    }
+}
+
+int main()
+{
+    
+    int iValue = 0;
+    printf("Enter the number to Display : \n");
+    scanf("%d",&iValue);
+    
+    Display(iValue);
+
+    return 0;
+}
+
+
+
+
+--------------------------------Program 29--------------------------------
+#include<stdio.h>
+
+void Display(int iNo)
+{
+    int iCnt=0;
+    for(iCnt = 1;iCnt>=iNo;iCnt++)
+    {
+        printf("%d\n",iCnt);
+    }
+}
+
+int main()
+{
+    
+    int iValue = 0;
+    printf("To Display number in reverse order : \n");
+    scanf("%d",&iValue);
+    
+    Display(iValue);
+
+    return 0;
+}
+
+
+
+
+
+--------------------------------Program 30--------------------------------
+#include<stdio.h>
+
+void Display(int iNo)
+{
+    int iCnt=0;
+    for(iCnt = iNo;iCnt>=0;iCnt++)
+    {
+        printf("%d\n",iCnt);
+    }
+}
+
+int main()
+{
+    
+    int iValue = 0;
+    printf("To Display number in reverse order : \n");
+    scanf("%d",&iValue);
+    
+    Display(iValue);
+
+    return 0;
+}
