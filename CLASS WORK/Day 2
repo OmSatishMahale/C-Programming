@@ -1,1 +1,312 @@
+-------------------------------Program 10------------------------------------
+/*
+                ALGORITHM
+START
+    Accept Number from user an store as no
+    Divide iNo by 2
+    If the remainder is 0 
+        then display even
+    otherwise
+        display odd 
+STOP
+*/
+
+#include<stdio.h>
+
+void CheckEvenOdd(int iNo)
+{
+    int iRem=0;
+
+    iRem = iNo % 2;
+
+    if(iRem == 0)
+    {
+        printf("Number is even...");
+    }
+    else
+    {
+        printf("Number is odd...");
+    }
+}
+
+int main()
+{
+    int iValue=0;
+    printf("Enter Number : \n");
+    scanf("%d",&iValue);
+
+    CheckEvenOdd(iValue);
+
+    return 0;
+}
+
+
+
+-------------------------------Program 11------------------------------------
+#include<stdio.h>
+#include<stdbool.h>
+
+bool CheckEvenOdd(int iNo)
+{
+    int iRem=0;
+
+    iRem = iNo % 2;
+
+    if(iRem == 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+int main()
+{
+    int iValue=0;
+    bool bRet=false;
+    
+    printf("Enter Number : \n");
+    scanf("%d",&iValue);
+
+    bRet = CheckEvenOdd(iValue);
+
+    printf("Result is : %d\n",bRet);
+
+    return 0;
+}
+
+
+
+
+
+-------------------------------Program 12------------------------------------
+#include<stdio.h>
+#include<stdbool.h>
+
+bool CheckEvenOdd(int iNo)
+{
+    int iRem=0;
+
+    iRem = iNo % 2;
+
+    if(iRem == 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+int main()
+{
+    int iValue=0;
+    bool bRet=false;
+    
+    printf("Enter Number : \n");
+    scanf("%d",&iValue);
+
+    bRet = CheckEvenOdd(iValue);
+
+    if(bRet == true)
+    {
+        printf("%d is even number\n",iValue);
+    }
+    else
+    {
+        printf("%d is odd number\n",iValue);
+    }
+    return 0;
+}
+
+-------------------------------Program 13------------------------------------
+#include<stdio.h>
+#include<stdbool.h>
+
+bool CheckEvenOdd(int iNo)
+{
+    if((iNo % 2) == 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+int main()
+{
+    int iValue=0;
+    bool bRet=false;
+    
+    printf("Enter Number : \n");
+    scanf("%d",&iValue);
+
+    bRet = CheckEvenOdd(iValue);
+
+    if(bRet == true)
+    {
+        printf("%d is even number\n",iValue);
+    }
+    else
+    {
+        printf("%d is odd number\n",iValue);
+    }
+    return 0;
+}
+
+
+
+
+-------------------------------Program 14------------------------------------
+////////////////////////////////////////////////////////////
+//
+//  Required Header Files
+//
+////////////////////////////////////////////////////////////
+
+#include<stdio.h>                               //For I/O
+#include<stdbool.h>                             //For bool Datatype
+
+////////////////////////////////////////////////////////////
+//
+//  Function Name : CheckEvenOdd
+//  Description :   It is used to check even odd
+//  Input :         Integer
+//  Output :        Boolean
+//  Author :        Om Satish Mahale
+//  Date :          10/10/2025
+//
+////////////////////////////////////////////////////////////
+bool CheckEvenOdd(int iNo)
+{
+    int iRem=0;
+
+    iRem = iNo % 2;
+
+    if(iRem == 0)
+    {  return true; }
+    else
+    {  return false; }
+}
+
+////////////////////////////////////////////////////////////
+//
+//  Entry Point Function
+//
+////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue=0;
+    bool bRet=false;
+    
+    printf("Enter Number : \n");
+    scanf("%d",&iValue);
+
+    bRet = CheckEvenOdd(iValue);
+
+    if(bRet == true)
+    { printf("%d is even number\n",iValue); }
+    else
+    { printf("%d is odd number\n",iValue); }
+    return 0;
+}
+
+
+
+-------------------------------Program 15------------------------------------
+#include<stdio.h>
+#include<stdbool.h>
+
+bool CheckEvenOdd(int iNo)
+{
+return ((iNo % 2)==0);
+}
+
+int main()
+{
+    int iValue=0;
+    bool bRet=false;
+    
+    printf("Enter Number : \n");
+    scanf("%d",&iValue);
+
+    bRet = CheckEvenOdd(iValue);
+
+    if(bRet == true)
+    {
+        printf("%d is even number\n",iValue);
+    }
+    else
+    {
+        printf("%d is odd number\n",iValue);
+    }
+    return 0;
+}
+
+-------------------------------Program 16------------------------------------
+#include<stdio.h>
+
+//Static Function
+void Display()                       
+{
+    int iCnt=0;
+    for(iCnt=1;iCnt<=4;iCnt++)
+    {
+    printf("Jay Ganesh...\n");
+    }
+}
+
+int main()
+{
+    
+    Display();
+    
+    return 0;
+}
+
+
+
+-------------------------------Program 17------------------------------------
+#include<stdio.h>
+void Display(int iFrequency)                       
+{
+    int iCnt=0;
+    for(iCnt=1;iCnt<=iFrequency;iCnt++)
+    {
+    printf("Jay Ganesh...\n");
+    }
+}
+
+int main()
+{  
+    int iCount=0;
+    printf("Enter the frequency : \n");
+    scanf("%d",&iCount);
+
+    Display(iCount);
+    
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
