@@ -1,1 +1,459 @@
+--------------------------------Program 31--------------------------------
+//INPUT 10
+// 2    4   6   8   10
 
+#include<stdio.h>
+
+void Display(int iNo)
+{
+    int iCnt=0;
+    for(iCnt = 2;iCnt<=iNo;iCnt=iCnt+2)
+    {
+            printf("%d\n",iCnt);
+    }
+}
+
+int main()
+{
+    
+    int iValue = 0;
+    printf("Enter the number : \t");
+    scanf("%d",&iValue);
+    
+    Display(iValue);
+
+    return 0;
+}
+
+
+
+--------------------------------Program 32--------------------------------
+//INPUT 10
+// 2    4   6   8   10
+
+#include<stdio.h>
+
+void Display(int iNo)
+{
+    int iCnt=0;
+    for(iCnt = 2;iCnt<=iNo;iCnt+=2)
+    {
+            printf("%d\n",iCnt);
+    }
+}
+
+//Time Complexity : O(N/2)
+int main()
+{
+    
+    int iValue = 0;
+    printf("Enter the number : \t");
+    scanf("%d",&iValue);
+    
+    Display(iValue);
+
+    return 0;
+}
+
+
+
+--------------------------------Program 33--------------------------------
+//INPUT 10
+// 2    4   6   8   10
+
+#include<stdio.h>
+ 
+void Display(int iNo)
+{
+    int iCnt=0;
+    for(iCnt = 1;iCnt<=iNo;iCnt++)
+    {
+        if(iCnt % 2 == 0)
+        {
+            printf("%d\n",iCnt);
+        }
+    }
+}
+//Time Complexity : O(N)
+
+int main()
+{
+    
+    int iValue = 0;
+    printf("Enter the number : \t");
+    scanf("%d",&iValue);
+    
+    Display(iValue);
+
+    return 0;
+}
+
+--------------------------------Program 34--------------------------------
+//INPUT : 12    2   OUTPUT : TRUE
+//INPUT : 12    3   OUTPUT : TRUE
+//INPUT : 12    5   OUTPUT : FALSE
+//INPUT : 12    6   OUTPUT : TRUE
+//INPUT : 12    7   OUTPUT : FALSE
+
+#include<stdio.h>
+ 
+
+int main()
+{
+    int iValue1,iValue2 =0;
+    printf("Enter First Number : \n");
+    scanf("%d",&iValue1);
+    printf("Enter Second Number : \n");
+    scanf("%d",&iValue2);
+
+    if((iValue1 % iValue2) == 0)
+    {
+        printf("It is Completely DIVISIBLE...");
+    }
+    else
+    {
+        printf("It is not DIVISIBLE...");
+    }
+
+    return 0;
+}
+
+
+
+
+--------------------------------Program 35--------------------------------
+//INPUT : 12    2   OUTPUT : TRUE
+//INPUT : 12    3   OUTPUT : FALSE
+//INPUT : 12    5   OUTPUT : FALSE
+//INPUT : 12    6   OUTPUT : TRUE
+//INPUT : 12    7   OUTPUT : FALSE
+
+#include<stdio.h>
+#include<stdbool.h>
+
+bool CheckDivisible(int iNo1,int iNo2)
+{
+    if((iNo1 % iNo2) == 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+int main()
+{
+    int iValue1,iValue2 =0;
+    bool bRet = false;
+
+    printf("Enter First Number : \n");
+    scanf("%d",&iValue1);
+    printf("Enter Second Number : \n");
+    scanf("%d",&iValue2);
+
+    bRet = CheckDivisible(iValue1,iValue2);
+    if(bRet == true)
+    {
+        printf("It is Completely Divisible");
+    }
+    else
+    {
+        printf("It is not Completely Divisible");
+    }
+    
+    return 0;
+}
+
+
+
+--------------------------------Program 36--------------------------------
+//Factors of 6
+
+#include<stdio.h>
+ 
+void DisplayFactors()
+{
+    if((6 % 1) == 0)
+    {
+        printf("1\n");
+    }
+    if((6 % 2) == 0)
+    {
+        printf("2\n");
+    }
+    if((6 % 3) == 0)
+    {
+        printf("3\n");
+    }
+    if((6 % 4) == 0)
+    {
+        printf("4\n");
+    }
+    if((6 % 5) == 0)
+    {
+        printf("5\n");
+    }
+}
+
+int main()
+{
+
+    int iValue=0;
+
+   // printf("Enter the number : \t");
+   // scanf("%d",&iValue);
+    DisplayFactors(6);
+
+    return 0;
+}
+
+
+--------------------------------Program 37--------------------------------
+//Factors of 6
+
+#include<stdio.h>
+ 
+// Wrong Approach
+void DisplayFactors(int iNo)
+{
+    if((iNo % 1) == 0)
+    {
+        printf("1\n");
+    }
+    if((iNo % 2) == 0)
+    {
+        printf("2\n");
+    }
+    if((iNo % 3) == 0)
+    {
+        printf("3\n");
+    }
+    if((iNo % 4) == 0)
+    {
+        printf("4\n");
+    }
+    if((iNo % 5) == 0)
+    {
+        printf("5\n");
+    }
+}
+
+int main()
+{
+
+    int iValue=0;
+
+   printf("Enter the number : \t");
+   scanf("%d",&iValue);
+    DisplayFactors(iValue);
+
+    return 0;
+}
+
+
+
+
+--------------------------------Program 38--------------------------------
+#include<stdio.h>
+ 
+void DisplayFactors(int iNo)
+{
+    int iCnt =0;
+    for(iCnt = 1;iCnt < iNo;iCnt++)
+    {
+        if((iNo % iCnt) == 0)
+        {
+            printf("%d\n",iCnt);
+        }
+    }
+}
+
+int main()
+{
+
+    int iValue=0;
+
+   printf("Enter the number : \t");
+   scanf("%d",&iValue);
+    DisplayFactors(iValue);
+
+    return 0;
+}
+
+
+
+--------------------------------Program 39--------------------------------
+#include<stdio.h>
+ 
+void DisplayFactors(int iNo)
+{
+    int iCnt =0;
+    if(iNo < 0)
+    {
+        iNo = -iNo;
+    }
+    for(iCnt = 1;iCnt < iNo;iCnt++)
+    {
+        if((iNo % iCnt) == 0)
+        {
+            printf("%d\n",iCnt);
+        }
+    }
+}
+//Time Complexity : O(N)
+
+int main()
+{
+
+    int iValue=0;
+
+   printf("Enter the number : \t");
+   scanf("%d",&iValue);
+    DisplayFactors(iValue);
+
+    return 0;
+}
+
+
+
+--------------------------------Program 40--------------------------------
+#include<stdio.h>
+ 
+void DisplayNonFactors(int iNo)
+{
+    int iCnt =0;
+    if(iNo < 0)
+    {
+        iNo = -iNo;
+    }
+    for(iCnt = 1;iCnt < iNo;iCnt++)
+    {
+        if((iNo % iCnt) != 0)
+        {
+            printf("%d\n",iCnt);
+        }
+    }
+}
+//Time Complexity : O(N)
+
+int main()
+{
+
+    int iValue=0;
+
+    printf("Enter the number : \t");
+    scanf("%d",&iValue);
+    DisplayNonFactors(iValue);
+
+    return 0;
+}
+
+
+
+--------------------------------Program 41--------------------------------
+#include<stdio.h>
+ 
+void DisplayFactors(int iNo)
+{
+    int iCnt =0;
+    if(iNo < 0)      //UPDATER
+    {
+        iNo = -iNo;
+    }
+    for(iCnt = 1;iCnt <= (iNo/2) ;iCnt++)
+    {
+        if((iNo % iCnt) == 0)
+        {
+            printf("%d\n",iCnt);
+        }
+    }
+}
+//Time Complexity : O(N/2)
+
+int main()
+{
+
+    int iValue=0;
+
+   printf("Enter the number : \t");
+   scanf("%d",&iValue);
+    DisplayFactors(iValue);
+
+    return 0;
+}
+
+
+
+--------------------------------Program 42--------------------------------
+#include<stdio.h>
+
+int CountFactors(int iNo)
+{
+    int iCnt =0,iFrequency=0;
+    if(iNo < 0)
+    {
+        iNo = -iNo;
+    }
+    for(iCnt =1; iCnt <= (iNo/2);iCnt++)
+    {
+        if(iNo % iCnt == 0)
+        {
+            iFrequency++;
+        }
+    }
+        return iFrequency;
+}
+
+int main()
+{
+
+    int iValue = 0,iRet=0;
+
+    printf("Enter the number : \n");
+    scanf("%d",&iValue);
+
+    iRet = CountFactors(iValue);
+
+    printf("Numbers of Factors are : %d\n",iRet);
+
+    return 0;
+}
+
+
+
+--------------------------------Program 43--------------------------------
+#include<stdio.h>
+
+int CountNonFactors(int iNo)
+{
+    int iCnt =0,iFrequency=0;
+    if(iNo < 0)
+    {
+        iNo = -iNo;
+    }
+    for(iCnt =1; iCnt < iNo ;iCnt++)
+    {
+        if(iNo % iCnt != 0)
+        {
+            iFrequency++;
+        }
+    }
+        return iFrequency;
+}
+
+int main()
+{
+
+    int iValue = 0,iRet=0;
+
+    printf("Enter the number : \n");
+    scanf("%d",&iValue);
+
+    iRet = CountNonFactors(iValue);
+
+    printf("Numbers of Non Factors are : %d\n",iRet);
+
+    return 0;
+}
