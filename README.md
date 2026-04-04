@@ -1,2 +1,2 @@
 # C-Programming
-This repository contaisn my C Programs
+This repository contains my C Programs
